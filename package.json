@@ -1,6 +1,6 @@
 {
   "name": "atom-jasmine",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Snippets for writing Jasmine specs easier in Atom.",
   "engines": {
     "atom": "*",
