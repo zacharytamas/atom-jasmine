@@ -1,0 +1,17 @@
+'.source.js':
+
+  ################################
+  # Expectations
+  ################################
+
+  'Expect':
+    prefix: 'ex'
+    body: 'expect($1)$2;'
+  'Expect to be defined':
+    prefix: 'ed'
+    body: 'expect($1).toBeDefined();'
+  'Expect not to be defined':
+    prefix: 'notd'
+    body: 'expect($1).not.toBeDefined();'
+
+# TODO Add Coffee equivalents

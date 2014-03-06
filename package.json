@@ -1,0 +1,20 @@
+{
+  "name": "Jasmine for Atom",
+  "version": "0.1.0",
+  "description": "Snippets for writing Jasmine specs easier in Atom.",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": {
+    "url": "https://github.com/zacharytamas/atom-jasmine/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacharytamas/atom-jasmine.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zacharytamas/atom-jasmine/issues"
+  }
+}

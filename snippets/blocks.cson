@@ -1,0 +1,43 @@
+'.source.js':
+
+  ################################
+  # Block-level snippets
+  ################################
+
+  'Describe block':
+    prefix: 'des'
+    body: """
+      describe("${1:description}", function () {
+        $2
+      });
+    """
+  'It block':
+    prefix: 'it'
+    body: """
+      it("${1:description}", function () {
+        $2
+      });
+    """
+  'After-Each block':
+    prefix: 'aft'
+    body: """
+      afterEach(function () {
+        $1
+      });
+    """
+  'Before-Each block':
+    prefix: 'bef'
+    body: """
+      beforeEach(function () {
+        $1
+      });
+    """
+  'Runs':
+    prefix: 'ru'
+    body: """
+      runs(function () {
+        $1
+      });
+    """
+
+# TODO Add Coffee equivalents
