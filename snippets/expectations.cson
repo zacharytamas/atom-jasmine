@@ -30,7 +30,7 @@
     prefix: 'en'
     body:   'expect(${1:target}).toBeNull();'
   'Expect to be truthy':
-    prefix: 'et':
+    prefix: 'et'
     body:   'expect(${1:target}).toBeTruthy();'
   'Expect to contain':
     prefix: 'ec'
