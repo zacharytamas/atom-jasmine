@@ -1,0 +1,27 @@
+'.source.js':
+
+  ################################
+  # Spies
+  ################################
+
+  'spyOn':
+    prefix: 'spy'
+    body:   'spyOn(${1:target}, "${2:method}");'
+  'spyOn.and.callThrough':
+    prefix: 'spyc'
+    body:   'spyOn(${1:target}, "${2:method}").and.callThrough();'
+  'spyOn.and.returnValue':
+    prefix: 'spyv'
+    body:   'spyOn(${1:target}, "${2:method}").and.returnValue(${3:value});'
+  'spyOn.and.callFake':
+    prefix: 'spyf'
+    body:   'spyOn(${1:target}, "${2:method}").and.callFake(${3:value});'
+  'spyOn.and.throwError':
+    prefix: 'spye'
+    body:   'spyOn(${1:target}, "${2:method}").and.throwError("${3:error}");'
+  'jasmine.createSpy':
+    prefix: 'cspy'
+    body:   '${1:target} = jasmine.createSpy("${1:target}");'
+  'jasmine.createSpyObj':
+    prefix: 'spyo'
+    body:   '${1:obj} = jasmine.createSpyObj("${1:obj}", ["${2:method}"]);'

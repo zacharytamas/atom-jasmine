@@ -41,6 +41,15 @@
   'Expect to match':
     prefix: 'em'
     body:   'expect(${1:target}).toMatch(${2:pattern});'
+  'Expect to have been called':
+    prefix: 'ebc'
+    body:   'expect(${1:target}).toHaveBeenCalled();'
+  'Expect to have been called with':
+    prefix: 'ebcw'
+    body:   'expect(${1:target}).toHaveBeenCalledWith("${2:value}");'
+  'Expect to throw error':
+    prefix: 'ete'
+    body:   'expect(${1:target}).toThrowError("${2:error}");'
 
   'Expect':
     prefix: 'ex'
