@@ -18,6 +18,14 @@
         $2
       });
     """
+  'It Async block':
+    prefix: 'itA'
+    body: """
+      it("${1:description}", function (${2:done}) {
+        $3
+        ${2:done}();
+      });
+    """
   'After-Each block':
     prefix: 'aft'
     body: """
@@ -25,11 +33,27 @@
         $1
       });
     """
+  'After-Each Async block':
+    prefix: 'aftA'
+    body: """
+      afterEach(function (${1:done}) {
+        $2
+        ${1:done}();
+      });
+    """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach(function () {
         $1
+      });
+    """
+  'Before-Each Async block':
+    prefix: 'befA'
+    body: """
+      beforeEach(function (${1:done}) {
+        $2
+        ${1:done}();
       });
     """
   'Runs':
@@ -54,17 +78,38 @@
       it "${1:description}", ->
         $2
     """
+  'It Async block':
+    prefix: 'itA'
+    body: """
+      it "${1:description}", (${2:done}) ->
+        $3
+        ${2:done}();
+    """
   'After-Each block':
     prefix: 'aft'
     body: """
       afterEach ->
         $1
     """
+  'After-Each block':
+    prefix: 'aftA'
+    body: """
+      afterEach (${1:done}) ->
+        $2
+        ${1:done}();
+    """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach ->
         $1
+    """
+  'Before-Each Async block':
+    prefix: 'befA'
+    body: """
+      beforeEach (${1:done}) ->
+        $2
+        ${1:done}();
     """
   'Runs':
     prefix: 'ru'
