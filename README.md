@@ -12,7 +12,7 @@ Or Settings ➔ Packages ➔ Search for `jasmine`
 
 ## Release Notes
 
-### 0.4.0
+### 0.6.0
 
 * Added more Expectation snippets via a pull request from [aki77](http://github.com/aki77). Thanks!
 
