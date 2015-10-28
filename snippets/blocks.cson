@@ -2,7 +2,7 @@
 # Block-level snippets
 ################################
 
-'.source.js':
+'.source.js, .source.ts':
 
   'Describe block':
     prefix: 'des'
