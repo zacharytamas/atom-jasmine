@@ -2,7 +2,7 @@
   # Expectations
   ################################
 
-'.source.js':
+'.source.js, .source.ts':
 
   'Expect not to be defined':
     prefix: 'notd'

@@ -2,7 +2,7 @@
   # Spies
   ################################
 
-'.source.js':
+'.source.js, .source.ts':
 
   'spyOn':
     prefix: 'spy'
