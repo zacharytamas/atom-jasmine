@@ -8,112 +8,113 @@
     prefix: 'des'
     body: """
       describe("${1:description}", function () {
-        $2
+      \t$2
       });
     """
   'It block':
     prefix: 'it'
     body: """
       it("${1:description}", function () {
-        $2
+      \t$2
       });
     """
   'It Async block':
     prefix: 'itA'
     body: """
       it("${1:description}", function (${2:done}) {
-        $3
-        ${2:done}();
+      \t$3
+      \t${2:done}();
       });
     """
   'After-Each block':
     prefix: 'aft'
     body: """
       afterEach(function () {
-        $1
+      \t$1
       });
     """
   'After-Each Async block':
     prefix: 'aftA'
     body: """
       afterEach(function (${1:done}) {
-        $2
-        ${1:done}();
+      \t$2
+      \t${1:done}();
       });
     """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach(function () {
-        $1
+      \t$1
       });
     """
   'Before-Each Async block':
     prefix: 'befA'
     body: """
       beforeEach(function (${1:done}) {
-        $2
-        ${1:done}();
+      \t$2
+      \t${1:done}();
       });
     """
   'Runs':
     prefix: 'ru'
     body: """
       runs(function () {
-        $1
+      \t$1
       });
     """
 
 
 '.source.coffee':
+
   'Describe block':
     prefix: 'des'
     body: """
       describe "${1:description}", ->
-        $2
+      \t$2
     """
   'It block':
     prefix: 'it'
     body: """
       it "${1:description}", ->
-        $2
+      \t$2
     """
   'It Async block':
     prefix: 'itA'
     body: """
       it "${1:description}", (${2:done}) ->
-        $3
-        ${2:done}();
+      \t$3
+      \t${2:done}();
     """
   'After-Each block':
     prefix: 'aft'
     body: """
       afterEach ->
-        $1
+      \t$1
     """
   'After-Each block':
     prefix: 'aftA'
     body: """
       afterEach (${1:done}) ->
-        $2
-        ${1:done}();
+      \t$2
+      \t${1:done}();
     """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach ->
-        $1
+      \t$1
     """
   'Before-Each Async block':
     prefix: 'befA'
     body: """
       beforeEach (${1:done}) ->
-        $2
-        ${1:done}();
+      \t$2
+      \t${1:done}();
     """
   'Runs':
     prefix: 'ru'
     body: """
       runs ->
-        $1
+      \t$1
     """
