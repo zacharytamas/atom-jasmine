@@ -12,6 +12,10 @@ Or Settings ➔ Packages ➔ Search for `jasmine`
 
 ## Release Notes
 
+### 0.6.0
+
+* Added more Expectation snippets via a pull request from [aki77](http://github.com/aki77). Thanks!
+
 ### 0.3.0
 
 * Adding more Expectation snippets. Modeling these after Pivotal's

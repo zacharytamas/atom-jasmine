@@ -2,7 +2,7 @@
 # Block-level snippets
 ################################
 
-'.source.js':
+'.source.js, .source.ts':
   'Describe block':
     prefix: 'des'
     body: """
@@ -17,6 +17,14 @@
       \t$2
       });
     """
+  'It Async block':
+    prefix: 'itA'
+    body: """
+      it("${1:description}", function (${2:done}) {
+      \t$3
+      \t${2:done}();
+      });
+    """
   'After-Each block':
     prefix: 'aft'
     body: """
@@ -24,11 +32,27 @@
       \t$1
       });
     """
+  'After-Each Async block':
+    prefix: 'aftA'
+    body: """
+      afterEach(function (${1:done}) {
+      \t$2
+      \t${1:done}();
+      });
+    """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach(function () {
       \t$1
+      });
+    """
+  'Before-Each Async block':
+    prefix: 'befA'
+    body: """
+      beforeEach(function (${1:done}) {
+      \t$2
+      \t${1:done}();
       });
     """
   'Runs':
@@ -53,17 +77,38 @@
       it "${1:description}", ->
       \t$2
     """
+  'It Async block':
+    prefix: 'itA'
+    body: """
+      it "${1:description}", (${2:done}) ->
+      \t$3
+      \t${2:done}();
+    """
   'After-Each block':
     prefix: 'aft'
     body: """
       afterEach ->
       \t$1
     """
+  'After-Each block':
+    prefix: 'aftA'
+    body: """
+      afterEach (${1:done}) ->
+      \t$2
+      \t${1:done}();
+    """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach ->
       \t$1
+    """
+  'Before-Each Async block':
+    prefix: 'befA'
+    body: """
+      beforeEach (${1:done}) ->
+      \t$2
+      \t${1:done}();
     """
   'Runs':
     prefix: 'ru'
