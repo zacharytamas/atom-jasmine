@@ -1,9 +1,8 @@
+################################
+# Expectations
+################################
+
 '.source.js':
-
-  ################################
-  # Expectations
-  ################################
-
   'Expect not to be defined':
     prefix: 'notd'
     body:   'expect($1).not.toBeDefined();'

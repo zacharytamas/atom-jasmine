@@ -3,40 +3,39 @@
 ################################
 
 '.source.js':
-
   'Describe block':
     prefix: 'des'
     body: """
       describe("${1:description}", function () {
-        $2
+      \t$2
       });
     """
   'It block':
     prefix: 'it'
     body: """
       it("${1:description}", function () {
-        $2
+      \t$2
       });
     """
   'After-Each block':
     prefix: 'aft'
     body: """
       afterEach(function () {
-        $1
+      \t$1
       });
     """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach(function () {
-        $1
+      \t$1
       });
     """
   'Runs':
     prefix: 'ru'
     body: """
       runs(function () {
-        $1
+      \t$1
       });
     """
 
@@ -46,29 +45,29 @@
     prefix: 'des'
     body: """
       describe "${1:description}", ->
-        $2
+      \t$2
     """
   'It block':
     prefix: 'it'
     body: """
       it "${1:description}", ->
-        $2
+      \t$2
     """
   'After-Each block':
     prefix: 'aft'
     body: """
       afterEach ->
-        $1
+      \t$1
     """
   'Before-Each block':
     prefix: 'bef'
     body: """
       beforeEach ->
-        $1
+      \t$1
     """
   'Runs':
     prefix: 'ru'
     body: """
       runs ->
-        $1
+      \t$1
     """
