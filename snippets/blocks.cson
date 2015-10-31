@@ -1,8 +1,9 @@
-################################
-# Block-level snippets
-################################
+ ################################
+ # Block-level snippets
+ ################################
 
 '.source.js, .source.ts':
+
   'Describe block':
     prefix: 'des'
     body: """
@@ -65,6 +66,7 @@
 
 
 '.source.coffee':
+
   'Describe block':
     prefix: 'des'
     body: """

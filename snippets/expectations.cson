@@ -1,8 +1,9 @@
-################################
-# Expectations
-################################
+ ################################
+ # Expectations
+ ################################
 
 '.source.js, .source.ts':
+
   'Expect not to be defined':
     prefix: 'notd'
     body:   'expect($1).not.toBeDefined();'
@@ -56,6 +57,7 @@
 
 
 '.source.coffee':
+
   'Expect not to be defined':
     prefix: 'notd'
     body:   'expect($1).not.toBeDefined()'
