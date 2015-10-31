@@ -12,6 +12,12 @@ Or Settings ➔ Packages ➔ Search for `jasmine`
 
 ## Release Notes
 
+### 0.7.0
+
+* Added `CONTRIBUTORS.md` file to give credit where credit is due.
+* Add Typescript grammar (thanks [pringshia](http://github.com/pringshia))
+* Add project-dependent indentation (thanks [stramel](http://github.com/stramel))
+
 ### 0.6.0
 
 * Added more Expectation snippets via a pull request from [aki77](http://github.com/aki77). Thanks!
