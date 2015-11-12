@@ -12,6 +12,12 @@ Or Settings ➔ Packages ➔ Search for `jasmine`
 
 ## Release Notes
 
+### 0.8.0
+
+* Added [more snippets for Matchers](https://github.com/zacharytamas/atom-jasmine/commit/b275251fbfec94b1d3ae3a9131a2e8e25b56143e). Thanks [storor](https://github.com/storor)!
+* Added extra (optional) breakpoints to some snippets to help with flow while stubbing out large amounts of tests at once. Thanks [stramel](http://github.com/stramel)!
+
+
 ### 0.7.0
 
 * Added `CONTRIBUTORS.md` file to give credit where credit is due.

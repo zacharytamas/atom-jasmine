@@ -7,3 +7,4 @@
 - [alepop](http://github.com/alepop)
 - [stramel](http://github.com/stramel)
 - [aki77](http://github.com/aki77)
+- [storor](https://github.com/storor)
