@@ -31,7 +31,7 @@
     body: """
       afterEach(function () {
       \t$1
-      });#2
+      });$2
     """
   'After-Each Async block':
     prefix: 'aftA'
