@@ -7,21 +7,21 @@
   'Describe block':
     prefix: 'des'
     body: """
-      describe("${1:description}", function () {
+      describe("${1:description}", function() {
       \t$2
       });$3
     """
   'It block':
     prefix: 'it'
     body: """
-      it("${1:description}", function () {
+      it("${1:description}", function() {
       \t$2
       });$3
     """
   'It Async block':
     prefix: 'itA'
     body: """
-      it("${1:description}", function (${2:done}) {
+      it("${1:description}", function(${2:done}) {
       \t$3
       \t${2:done}();
       });$4
@@ -29,14 +29,14 @@
   'After-Each block':
     prefix: 'aft'
     body: """
-      afterEach(function () {
+      afterEach(function() {
       \t$1
       });$2
     """
   'After-Each Async block':
     prefix: 'aftA'
     body: """
-      afterEach(function (${1:done}) {
+      afterEach(function(${1:done}) {
       \t$2
       \t${1:done}();
       });$3
@@ -44,14 +44,14 @@
   'Before-Each block':
     prefix: 'bef'
     body: """
-      beforeEach(function () {
+      beforeEach(function() {
       \t$1
       });$2
     """
   'Before-Each Async block':
     prefix: 'befA'
     body: """
-      beforeEach(function (${1:done}) {
+      beforeEach(function(${1:done}) {
       \t$2
       \t${1:done}();
       });$3
@@ -59,7 +59,7 @@
   'Runs':
     prefix: 'ru'
     body: """
-      runs(function () {
+      runs(function() {
       \t$1
       });$2
     """
