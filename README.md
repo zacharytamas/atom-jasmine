@@ -12,6 +12,10 @@ Or Settings ➔ Packages ➔ Search for `jasmine`
 
 ## Release Notes
 
+### 0.9.0
+
+* Fixes formatting for JS and TS block-level snippets, particularly to correspond with ESlint's [rule](http://eslint.org/docs/rules/space-before-function-paren) for not having whitespace before function parenthesis. (Thanks [artemruts](https://github.com/artemruts)!)
+
 ### 0.8.0
 
 * Added [more snippets for Matchers](https://github.com/zacharytamas/atom-jasmine/commit/b275251fbfec94b1d3ae3a9131a2e8e25b56143e). Thanks [storor](https://github.com/storor)!
