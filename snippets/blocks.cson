@@ -7,21 +7,21 @@
   'Describe block':
     prefix: 'des'
     body: """
-      describe("${1:description}", function() {
+      describe('${1:description}', function() {
       \t$2
       });$3
     """
   'It block':
     prefix: 'it'
     body: """
-      it("${1:description}", function() {
+      it('${1:description}', function() {
       \t$2
       });$3
     """
   'It Async block':
     prefix: 'itA'
     body: """
-      it("${1:description}", function(${2:done}) {
+      it('${1:description}', function(${2:done}) {
       \t$3
       \t${2:done}();
       });$4
@@ -70,19 +70,19 @@
   'Describe block':
     prefix: 'des'
     body: """
-      describe "${1:description}", ->
+      describe '${1:description}', ->
       \t$2
     """
   'It block':
     prefix: 'it'
     body: """
-      it "${1:description}", ->
+      it '${1:description}', ->
       \t$2
     """
   'It Async block':
     prefix: 'itA'
     body: """
-      it "${1:description}", (${2:done}) ->
+      it '${1:description}', (${2:done}) ->
       \t$3
       \t${2:done}();
       $4
