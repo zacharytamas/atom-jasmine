@@ -93,7 +93,7 @@
       afterEach ->
       \t$1
     """
-  'After-Each block':
+  'After-Each Async block':
     prefix: 'aftA'
     body: """
       afterEach (${1:done}) ->
