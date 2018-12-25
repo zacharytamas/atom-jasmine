@@ -1,5 +1,7 @@
 # Jasmine for Atom
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zacharytamas/atom-jasmine.svg)](https://greenkeeper.io/)
+
 > Easily write Jasmine tests for your project in Atom.
 
 ## Install
